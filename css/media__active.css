@@ -1,0 +1,272 @@
+@media screen and (max-width: 992px) {
+  body footer {
+    width: 100%;
+  }
+  body .player {
+    width: 100%;
+  }
+  body .player .player__container_outside {
+    height: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  body .player .player__container_outside .player__container {
+    width: 100%;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  body .player .player__container_outside .player__container .player__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 65%;
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .player .player__container_outside .player__container .player__controls > img:first-of-type {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    display: block;
+  }
+  body .player .player__container_outside .player__container .player__controls .controls {
+    width: 170px;
+    margin-right: 0;
+  }
+  body .player .player__container_outside .player__container .player__duration {
+    width: 100%;
+  }
+  body .player .player__container_outside .player__container .player__duration p {
+    font-size: 18px;
+  }
+  body .player .player__container_outside .player__container .player__duration .duration {
+    width: 70%;
+  }
+  body .player .player__container_outside > img {
+    display: none;
+  }
+  body .player .player__container_outside .player__sound {
+    width: 8%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .player .player__container_outside .player__sound .sound {
+    width: 6px;
+    height: 60%;
+  }
+  body .player .player__container_outside .player__sound .sound .current__sound {
+    width: 6px;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body main .aside__section {
+    display: none;
+  }
+  body main .main__section {
+    width: 100%;
+  }
+  body main .main__section .playlist {
+    width: 95%;
+  }
+  body main .main__section .song__info_container {
+    width: 100%;
+    margin: 40px 0;
+  }
+  body main .main__section .song__info_container .song__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px 0;
+  }
+  body main .main__section .song__info_container .song__info .label__container {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    color: #AFAFAF;
+    margin-left: 20px;
+  }
+  body main .main__section .song__info_container .song__info .info__container {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    color: #323232;
+    margin-left: 20px;
+  }
+  body main .main__section .song__info_container .song__buttons {
+    display: none;
+  }
+  body main .main__section .song__info_container .song__buttons button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 25%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #3080EC;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+  }
+  body main .main__section .song__info_container .song__buttons button:first-of-type {
+    margin-right: 20px;
+  }
+  body main .main__section .song__info_container .song__buttons button p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  body main .main__section .song__info_container > p {
+    display: none;
+  }
+  body .player .player__container_outside .player__container .player__controls {
+    width: 68%;
+  }
+}
+@media screen and (max-width: 492px) {
+  body header {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .main__section .playlist header h4:first-of-type {
+    margin-right: 10px;
+  }
+  body main .main__section .playlist header h4:nth-child(2) {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: 10px;
+  }
+  body main .main__section .playlist header h4:nth-child(3) {
+    width: 80%;
+  }
+  body main .main__section .playlist header h4:nth-of-type(4) {
+    display: none;
+  }
+  body main .main__section .playlist .songs__container .order {
+    margin-right: 10px;
+  }
+  body main .main__section .playlist .songs__container .name {
+    display: none;
+  }
+  body main .main__section .playlist .songs__container .container__title {
+    width: 100%;
+  }
+  body main .main__section .playlist .songs__container .container__title img {
+    margin-right: 15px;
+  }
+  body main .main__section .playlist .songs__container .container__title .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .main__section .playlist .songs__container .container__title .title::after {
+    width: calc(100% + 100px);
+    content: "Lorem Ipsum";
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    color: #2C4971;
+    cursor: pointer;
+  }
+  body main .main__section .playlist .songs__container .album {
+    display: none;
+  }
+  body main .main__section .song__info_container {
+    margin: 0;
+  }
+  body main .main__section .song__info_container .song__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+  body main .main__section .song__info_container .song__info .song__cover {
+    width: 95%;
+    height: 100px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  body main .main__section .song__info_container .song__info .description__container {
+    width: 95%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .main__section .song__info_container .song__info .description__container .label__container {
+    margin: 0;
+  }
+  body main .main__section .song__info_container .song__info .song__cover {
+    margin-bottom: 30px;
+  }
+  body .player .player__container_outside .player__container .player__controls {
+    width: 75%;
+  }
+  body .player .player__container_outside .player__container .player__controls > img:first-of-type {
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+  }
+  body .player .player__container_outside .player__container .player__duration {
+    width: 110%;
+  }
+  body .player .player__container_outside .player__container .player__duration p {
+    font-size: 18px;
+  }
+  body .player .player__container_outside .player__container .player__duration .duration {
+    width: 70%;
+  }
+  body .player .player__container_outside .player__sound {
+    width: 8%;
+    height: 70%;
+    margin-top: 5px;
+  }
+  body .player .player__container_outside .player__sound img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  body .player .player__container_outside .player__sound .sound {
+    width: 6px;
+    height: 60%;
+  }
+  body .player .player__container_outside .player__sound .sound .current__sound {
+    width: 6px;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 400px) {
+  body .player .player__container_outside .player__container .player__controls {
+    width: 83%;
+  }
+}/*# sourceMappingURL=media__active.css.map */

@@ -1,0 +1,671 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;700&family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover, a:hover {
+  cursor: pointer;
+}
+
+body {
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header {
+  display: none;
+  margin-top: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+body header .container {
+  min-width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header .container .toggle__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+body header .container .toggle__bar .toggle__lines {
+  width: 20px;
+  height: 2px;
+  background-color: #3080EC;
+}
+body header .container .toggle__bar .toggle__lines:first-of-type {
+  width: 50%;
+}
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+body main .aside__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 1px solid #EBEBEB;
+  margin-top: 10px;
+}
+body main .aside__section .section__container {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .aside__section .section__container .logo__container {
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body main .aside__section .section__container .logo__container a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+body main .aside__section .section__container .search__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border: 1px solid #3080EC;
+  border-radius: 95px;
+  display: none;
+}
+body main .aside__section .section__container .search__bar p {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  color: #868686;
+  margin-right: 10px;
+}
+body main .aside__section .section__container .search__bar img {
+  margin-right: 20px;
+}
+body main .aside__section .section__container .container__list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .aside__section .section__container .container__list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #353535;
+}
+body main .aside__section .section__container .container__list ul li:last-of-type {
+  margin-bottom: 15px;
+}
+body main .aside__section .section__container .container__list ul li img {
+  margin-right: 10px;
+}
+body main .aside__section .album__covers_container h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #353535;
+  margin-bottom: 20px;
+  cursor: default;
+}
+body main .aside__section .album__covers_container .album__covers article {
+  margin-bottom: 20px;
+}
+body main .aside__section .album__covers_container .album__covers article img {
+  border-radius: 5px;
+}
+body main .aside__section .album__covers_container .album__covers article h3 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 16px;
+  color: #353535;
+}
+body main .aside__section .album__covers_container .album__covers article .container__span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .aside__section .album__covers_container .album__covers article .container__span span {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #B0B0B0;
+}
+body main .main__section {
+  width: 70%;
+  margin: 10px;
+}
+body main .main__section .song__info_container {
+  width: 100%;
+  margin: 40px 0;
+}
+body main .main__section .song__info_container .song__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+}
+body main .main__section .song__info_container .song__info .song__cover {
+  width: 100px;
+  height: 100px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+body main .main__section .song__info_container .song__info .description__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body main .main__section .song__info_container .song__info .description__container .label__container {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #AFAFAF;
+  margin-left: 20px;
+}
+body main .main__section .song__info_container .song__info .description__container .info__container {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #323232;
+  margin-left: 20px;
+}
+body main .main__section .song__info_container .song__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+body main .main__section .song__info_container .song__buttons button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 25%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #3080EC;
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+}
+body main .main__section .song__info_container .song__buttons button:first-of-type {
+  margin-right: 20px;
+}
+body main .main__section .song__info_container .song__buttons button p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+body main .main__section .song__info_container > p {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  color: #323232;
+}
+body main .main__section .playlist {
+  width: 80%;
+  margin-bottom: 100px;
+}
+body main .main__section .playlist header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #EBEBEB;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #B0B0B0;
+  cursor: default;
+}
+body main .main__section .playlist header h4 {
+  width: 28%;
+}
+body main .main__section .playlist header h4:first-of-type {
+  width: 4%;
+  text-align: center;
+}
+body main .main__section .playlist .songs__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+body main .main__section .playlist .songs__container > * {
+  width: 28%;
+}
+body main .main__section .playlist .songs__container span {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+body main .main__section .playlist .songs__container span:first-of-type {
+  width: 4%;
+}
+body main .main__section .playlist .songs__container .order {
+  text-align: center;
+}
+body main .main__section .playlist .songs__container .order, body main .main__section .playlist .songs__container .title {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 16px;
+  color: #2C4971;
+}
+body main .main__section .playlist .songs__container .name, body main .main__section .playlist .songs__container .album, body main .main__section .playlist .songs__container .duration {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #2C4971;
+}
+body main .main__section .playlist .songs__container .container__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .main__section .playlist .songs__container .container__title img {
+  margin-right: 10px;
+}
+body main .main__section .playlist .songs__container .container__duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .main__section .songs__container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+body main .main__section .songs__container article .song__cover_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .main__section .songs__container article .song__cover_container img {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+body main .main__section .songs__container article .song__cover_container p {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 16px;
+  color: #2C4971;
+}
+body main .main__section .songs__container article .song__cover_container p:first-of-type {
+  margin-left: 5px;
+}
+body main .main__section .songs__container article span {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #2C4971;
+}
+body main .page__counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 200px;
+}
+body main .page__counter a .page__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border: 1px solid #3080EC;
+  border-radius: 2px;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  color: #3080EC;
+  margin-right: 5px;
+}
+body main .page__counter a .page__numbers:active {
+  background-color: #3080EC;
+  color: #fff;
+}
+body main .page__counter a:first-of-type .page__numbers {
+  background-color: #3080EC;
+  color: #fff;
+}
+body main .page__counter .other__pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 5px;
+}
+body main .page__counter .other__pages .dots {
+  width: 6px;
+  height: 6px;
+  background: rgba(48, 128, 236, 0.2);
+  border-radius: 100%;
+}
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 85px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3080ec;
+  border-radius: 20px 20px 0 0;
+}
+body footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+body footer .footer__container .container__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+body footer .footer__container .container__top .link__container a {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+body footer .footer__container .container__top div:nth-of-type(2) {
+  width: 154px;
+  height: 32px;
+  background-color: #D9D9D9;
+}
+body footer .footer__container p {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+body .player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  width: 80%;
+  height: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3080EC;
+  border-radius: 5px;
+}
+body .player .player__container_outside {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .player .player__container_outside .player__container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .player .player__container_outside .player__container .player__controls {
+  width: 20%;
+}
+body .player .player__container_outside .player__container .player__controls > img:first-of-type {
+  display: none;
+}
+body .player .player__container_outside .player__container .player__controls .controls {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 40px;
+}
+body .player .player__container_outside .player__container .player__controls .controls button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 52px;
+  aspect-ratio: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0;
+  outline: 0;
+  border-radius: 100%;
+}
+body .player .player__container_outside .player__container .player__controls .controls button img {
+  margin-left: 5px;
+}
+body .player .player__container_outside .player__container .player__duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+body .player .player__container_outside .player__container .player__duration p {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 22px;
+  color: #FFFFFF;
+  text-align: left;
+}
+body .player .player__container_outside .player__container .player__duration .duration {
+  width: 60%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+body .player .player__container_outside .player__container .player__duration .duration .current__duration {
+  width: 60%;
+  height: 100%;
+  background-color: #1754A7;
+  border-radius: 5px;
+}
+body .player .player__container_outside > img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+body .player .player__container_outside .player__sound {
+  width: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .player .player__container_outside .player__sound .sound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.479);
+  border-radius: 5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+body .player .player__container_outside .player__sound .sound .current__sound {
+  width: 60%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+}/*# sourceMappingURL=style__active.css.map */

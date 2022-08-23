@@ -1,0 +1,273 @@
+@media screen and (max-width:992px){
+    body{
+        footer{
+            width: 100%;
+        }
+        .player{
+            width: 100%;
+            .player__container_outside{
+                height: 100%;
+                align-items: start;
+                .player__container{
+                    width: 100%;
+                    height: 100%;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    align-items: start;
+                  .player__controls{
+                    display: flex;
+                    width: 65%;
+                    margin: 0;
+                    justify-content: space-between;
+                    & > img:first-of-type{
+                        transform: scale(0.5);
+                        display: block;
+                    }
+                    .controls{
+                        width: 170px;
+                        margin-right: 0;
+                    }
+                  }
+                  .player__duration{
+                    width: 100%;
+                    p{
+                        font-size: 18px;
+                    }
+                    .duration{
+                        width: 70%;
+                    }
+                  } 
+                }
+                & > img{
+                    display: none;
+                }
+                .player__sound{
+                    width: 8%;
+                    height: 100%;
+                    flex-direction: column-reverse;
+                    justify-content: space-around;
+                    .sound{
+                        width: 6px;
+                        height: 60%;
+                        .current__sound{
+                            width: 6px;
+                            height: 60%;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        main{
+            .aside__section{
+                display: none;
+            }
+            .main__section{
+                width: 100%;
+                .playlist{
+                    width: 95%;
+                }
+                .song__info_container{
+                    width: 100%;
+                    margin: 40px 0;
+                    .song__info{
+                        display: flex;
+                        margin: 30px 0;
+                        .label__container{
+                            font-family: 'Open Sans';
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #AFAFAF;
+                            margin-left: 20px;
+                        }
+                        .info__container{
+                            font-family: 'Open Sans';
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #323232;
+                            margin-left: 20px;
+                        }
+                    }
+                    .song__buttons{
+                        display: none;
+                        button{
+                            display: flex;
+                            min-width: 25%;
+                            justify-content: space-between;
+                            background-color: #3080EC;
+                            padding: 10px;
+                            outline: 0;
+                            border: 0;
+                            border-radius: 10px;
+                            &:first-of-type{
+                                margin-right: 20px;
+                            }
+                            p{
+                                font-family: 'Open Sans';
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                    & > p{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .player{
+            .player__container_outside{
+                .player__container{
+                    .player__controls{
+                        width: 68%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:492px){
+    body{
+        header{
+            width: 90%;
+            display: flex;
+        }
+        main{
+            .main__section{
+                .playlist{
+                    header{
+                        h4:first-of-type{
+                            margin-right: 10px;
+                        }
+                        h4:nth-child(2){
+                            width: max-content;
+                            margin-right: 10px;
+                        }
+                        h4:nth-child(3){
+                            width: 80%;
+                        }
+                        h4:nth-of-type(4){
+                            display: none;
+                        }
+                    }
+                    .songs__container{
+                        .order{
+                            margin-right: 10px;
+                        }
+                        .name{
+                            display: none;
+                        }
+                        
+                        .container__title{
+                            width: 100%;
+                           img{
+                            margin-right: 15px;
+                           }
+                            .title{
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            .title::after{
+                                width: calc(100% + 100px);
+                                content: 'Lorem Ipsum';
+                                font-family: 'Open Sans';
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: #2C4971;
+                                cursor: pointer ;
+                            }
+                        }
+                        
+                        .album{
+                            display: none;
+                        }
+                    }
+                    
+                }
+                .song__info_container{
+                    margin: 0;
+                    .song__info{
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0;
+                        margin-top: 20px;
+                        .song__cover{
+                            width: 95%;
+                            height: 100px;
+                            background-color: #d9d9d9;
+                            border-radius: 10px;
+                        }
+                        .description__container{
+                            width: 95%;
+                            justify-content: space-between;
+                            .label__container{
+                                margin: 0;
+                            }
+                    }
+                    .song__cover{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .player{
+        .player__container_outside{
+            .player__container{
+                .player__controls{
+                    width: 75%;
+                    & > img:first-of-type{
+                        transform: scale(0.45);
+                    }
+                }
+                .player__duration{
+                    width: 110%;
+                    p{
+                        font-size: 18px;
+                    }
+                    .duration{
+                        width: 70%;
+                    }
+                  } 
+            }
+            .player__sound{
+                width: 8%;
+                height: 70%;
+                margin-top: 5px;
+                img{
+                    transform: scale(0.8);
+                }
+                .sound{
+                    width: 6px;
+                    height: 60%;
+                    .current__sound{
+                        width: 6px;
+                        height: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media screen and (max-width:400px){
+    body{
+        .player{
+            .player__container_outside{
+                .player__container{
+                    .player__controls{
+                        width: 83%;
+                    }
+                }
+            }
+        }
+    }
+}
